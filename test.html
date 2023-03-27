@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+</head>
+<body>
+<form>
+    <label>Username:</label>
+    <input type="text" id="username"><br><br>
+    <label>Password:</label>
+    <input type="password" id="password"><br><br>
+    <button type="button" onclick="storeLogin()">Login</button>
+</form>
+
+<script>
+		function storeLogin() {
+			// get the values of the username and password fields
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			// store the values in local storage
+			localStorage.setItem("username", username);
+			localStorage.setItem("password", password);
+
+            console.log(username);
+            console.log(password);
+
+			// display a message to indicate that the login information has been stored
+			alert("Login information has been stored!");
+		}
+	</script>
+</body>
+</html>
