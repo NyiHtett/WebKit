@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Login Form</title>
 </head>
 <body>
-<form>
+<form>     //Username and password
     <label>Username:</label>
     <input type="text" id="username"><br><br>
     <label>Password:</label>
@@ -12,7 +13,7 @@
     <button type="button" onclick="storeLogin()">Login</button>
 </form>
 
-<script>
+<script>   //Getting date of username and password
 		function storeLogin() {
 			// get the values of the username and password fields
 			var username = document.getElementById("username").value;
